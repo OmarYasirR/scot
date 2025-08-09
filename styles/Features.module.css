@@ -1,0 +1,16 @@
+.feat_cont{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 100px 0;
+}
+@media (max-width: 991px) {
+  .feat_cont{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .feat_cont{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

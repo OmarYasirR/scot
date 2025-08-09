@@ -1,0 +1,46 @@
+.cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.stat{
+  display: flex;
+  justify-content: space-between;
+}
+.num{
+  font-size: 20px;
+}
+.dis{
+  opacity: 0.5;
+}
+.img{
+  width: 100%;
+  position: relative;
+}
+.img::before{
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  background-image: url('../public/images/dots.png');
+  background-repeat: no-repeat;
+  left: -10%;
+  bottom: -10%;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .cont{
+    grid-template-columns: 1fr;
+  }
+  .img::before{
+    display: none;
+  }
+}

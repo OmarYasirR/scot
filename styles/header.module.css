@@ -1,0 +1,77 @@
+.header{
+  background: #e91e63e3;
+  padding: 13px 0px;
+  color: #fff;
+  box-shadow: 4px 0 20px -5px rgb(0 0 0 / 10%);
+  position: sticky;
+  top: 0;
+  z-index: 7;
+}
+.cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #fff;
+  cursor: pointer;
+}
+.horis{
+  display: flex;
+  gap: 15px;
+
+}
+.active{
+  font-weight: bold;
+  transition: 0.2s;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+.social{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.icon_hors{
+  color: #fff;
+  font-size: 24px;;
+  cursor: pointer;
+  display: none;
+}
+.vertical{
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100vh;
+  z-index: 6;
+  background: var(--secondry);
+  box-shadow: 4px 0 20px -5px rgb(0 0 0 / 10%);  transition: var(--trans);
+  transform: translateX(104%);
+}
+.icon_ver{
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  font-size: 22px;
+}
+@media (max-width: 991px) {
+  .horis{
+    display: none;
+  }
+  .icon_hors{
+    display: block;
+  }
+}
